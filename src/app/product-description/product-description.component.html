@@ -1,4 +1,9 @@
 <div class="row description">
   <div class="col-sm-2">
-    <img src="assets/opacity-zero.jpg" alt="product image" />
+    <img src="{{albumInfo?.album.coverImage}}" alt="product">
+  </div>
+  <div class="col-sm-6">
+    <div class="album-name">{{albumInfo?.album.name}}</div>
+    <p class="band-name">{{albumInfo?.artist}}</p>
+    <p class="album-release-date">{{ albumInfo?.album.releaseDate}}</p>
   </div>
